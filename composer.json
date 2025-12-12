@@ -1,0 +1,26 @@
+{
+    "name": "yourname/italic-fonts",
+    "description": "Make all fonts italic",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YourName\\ItalicFonts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourName\\ItalicFonts\\Providers\\ItalicFontsServiceProvider"
+            ],
+            "aliases": {
+                "ItalicFonts": "YourName\\ItalicFonts\\Facades\\ItalicFonts"
+            }
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0"
+    },
+    "minimum-stability": "dev"
+}
